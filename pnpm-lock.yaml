@@ -11,9 +11,6 @@ importers:
       '@toy-element/components':
         specifier: workspace:*
         version: link:packages/components
-      '@toy-element/core':
-        specifier: workspace:*
-        version: link:packages/core
       '@toy-element/hooks':
         specifier: workspace:*
         version: link:packages/hooks
@@ -26,6 +23,9 @@ importers:
       lodash-es:
         specifier: ~4.17.21
         version: 4.17.21
+      toy-element:
+        specifier: workspace:*
+        version: link:packages/core
       vue:
         specifier: 3.4.19
         version: 3.4.19(typescript@5.2.2)
@@ -92,11 +92,7 @@ importers:
         specifier: 24.0.0
         version: 24.0.0
 
-  packages/core:
-    dependencies:
-      '@toy-element/components':
-        specifier: workspace:*
-        version: link:../components
+  packages/core: {}
 
   packages/docs:
     devDependencies:

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm --filter @toy-element/play dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs:dev": "pnpm --filter @toy-element/docs docs:dev",
+    "docs:build": "pnpm --filter @toy-element/docs docs:build"
   },
   "keywords": [],
   "author": "",
@@ -29,8 +30,8 @@
   "dependencies": {
     "lodash-es": "~4.17.21",
     "vue": "3.4.19",
-    "@toy-element/core": "workspace:*",
     "@toy-element/components": "workspace:*",
+    "toy-element": "workspace:*",
     "@toy-element/hooks": "workspace:*",
     "@toy-element/theme": "workspace:*",
     "@toy-element/utils": "workspace:*"

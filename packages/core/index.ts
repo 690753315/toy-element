@@ -1,6 +1,8 @@
+import { makeInstaller } from "@toy-element/utils"
+
 import components from "./components"
 
-import { makeInstaller } from "@toy-element/utils"
+import "@toy-element/theme/index.css"
 
 // 返回installer方法，该方法可以批量注册组件
 const installer = makeInstaller(components)
