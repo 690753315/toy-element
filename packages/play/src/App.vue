@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <er-button></er-button>
+    <er-button type="primary" size="small">按钮</er-button>
   </div>
 </template>
 
