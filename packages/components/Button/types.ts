@@ -1,4 +1,4 @@
-import type { Component } from "vue"
+import type { Component, Ref } from "vue"
 
 export type ButtonType = "primary" | "success" | "warning" | "danger" | "info"
 
@@ -13,8 +13,33 @@ export interface ButtonProps {
   size?: ButtonSize
   disabled?: boolean
   loading?: boolean
+  loadingIcon?: string
   icon?: string
   circle?: boolean
   plain?: boolean
   round?: boolean
+  autofocus?: boolean
+  useThrottle?: boolean
+  throttleDuration?: number
+}
+
+export interface ButtonEmits {
+  (e: "click", val: MouseEvent): void
+}
+
+// 对外暴露的属性
+export interface ButtonInstance {
+  ref: Ref<HTMLButtonElement | void>
+}
+
+export interface ButtonGroupProps {
+  size?: ButtonSize
+  type?: ButtonType
+  disabled?: boolean
+}
+
+export interface ButtonGroupContext {
+  size?: ButtonSize
+  type?: ButtonType
+  disabled?: boolean
 }

@@ -1,8 +1,14 @@
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { fas } from "@fortawesome/free-solid-svg-icons"
+
 import { makeInstaller } from "@toy-element/utils"
 
 import components from "./components"
 
 import "@toy-element/theme/index.css"
+
+// 添加fontawesome图标
+library.add(fas)
 
 // 返回installer方法，该方法可以批量注册组件
 const installer = makeInstaller(components)
