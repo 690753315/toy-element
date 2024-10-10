@@ -5,6 +5,8 @@ import { COLLAPSE_CTX_KEY } from "./constants"
 
 import { ErIcon } from "../Icon"
 
+import transitionEvents from "./transitionEvents"
+
 defineOptions({
   name: "ErCollapseItem"
 })
@@ -45,11 +47,13 @@ function handleClick() {
       <er-icon icon="angle-right" class="header-angle" />
     </div>
 
-    <div v-show="isActive" class="er-collapse-item__wrapper">
-      <div :id="`item-content-${name}`" class="er-collapse-item__content">
-        <slot></slot>
+    <transition name="slide" v-on="transitionEvents">
+      <div v-show="isActive" class="er-collapse-item__wrapper">
+        <div :id="`item-content-${name}`" class="er-collapse-item__content">
+          <slot></slot>
+        </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
 
