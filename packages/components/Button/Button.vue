@@ -45,7 +45,10 @@ const iconStyle = computed(() => ({
 
 const _ref = ref<HTMLButtonElement>()
 defineExpose<ButtonInstance>({
-  ref: _ref
+  ref: _ref,
+  size,
+  type,
+  disabled
 })
 </script>
 
