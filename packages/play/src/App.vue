@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue"
 
-// const activeNames = ref(["a", "b", "c"])
+const activeNames = ref(["a", "b", "c"])
 
 const args = {
   title: "标题",
@@ -15,9 +15,18 @@ const args = {
 </script>
 
 <template>
-  <er-alert ref="alertRef" v-bind="args"></er-alert>
+  <er-button type="success" round icon="search">按钮</er-button>
 
-  <!-- <er-collapse v-model="activeNames" :accordion="true">
+  <hr />
+
+  <er-button-group type="primary">
+    <er-button icon="search">按钮</er-button>
+    <er-button icon="plus">按钮</er-button>
+  </er-button-group>
+
+  <hr />
+
+  <er-collapse v-model="activeNames" :accordion="true">
     <er-collapse-item name="a" title="Title a">
       <div>this is content a</div>
     </er-collapse-item>
@@ -27,7 +36,11 @@ const args = {
     <er-collapse-item name="c" title="title c  disable" disabled>
       <div>this is content c</div>
     </er-collapse-item>
-  </er-collapse> -->
+  </er-collapse>
+
+  <hr />
+
+  <er-alert ref="alertRef" v-bind="args"></er-alert>
 </template>
 
 <style scoped></style>

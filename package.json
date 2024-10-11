@@ -4,29 +4,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "Components library by Vue3 + Ts",
-  "type": "module",
-  "main": "./dist/umd/index.umd.cjs",
-  "module": "./dist/es/index.js",
-  "types": "./dist/types/core/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/es/index.js",
-      "require": "./dist/umd/index.cjs",
-      "types": "./dist/types/core/index.d.ts"
-    },
-    "./dist/": {
-      "import": "./dist/",
-      "require": "./dist/"
-    }
-  },
-  "sideEffects": [
-    "./dist/index.css",
-    "./dist/theme/*.css"
-  ],
-  "peerDependencies": {
-    "vue": "^3.4.27"
-  },
+  "main": "index.js",
   "scripts": {
     "dev": "pnpm --filter @toy-element/play dev",
     "story": "pnpm --filter @toy-element/play storybook",

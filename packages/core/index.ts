@@ -14,7 +14,7 @@ library.add(fas)
 const installer = makeInstaller(components)
 
 // 暴露多个组件，供按需引入
-export * from "@toy-element/components"
+export * from "../components"
 
 // 暴露install方法，供一次性引入
 export default installer
