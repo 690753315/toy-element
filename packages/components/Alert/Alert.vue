@@ -65,7 +65,7 @@ defineExpose<AlertInstance>({
           :class="{
             'with-desc': withDescription
           }"
-          :stlye="{ display: center && !showIcon ? 'flow' : 'inline' }"
+          :style="{ display: center && !showIcon ? 'flow' : 'inline' }"
         >
           <slot name="title">{{ title }}</slot>
         </span>
