@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/vue3"
-import { ErCollapse, ErCollapseItem } from "toy-element"
+import { ErCollapse, ErCollapseItem } from "zanwu-toy-element"
 
 type Story = StoryObj<typeof ErCollapse>
 

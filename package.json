@@ -1,16 +1,16 @@
 {
-  "name": "@toy-element/workspace",
+  "name": "@zanwu-toy-element/workspace",
   "version": "1.0.0",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm --filter @toy-element/play dev",
-    "story": "pnpm --filter @toy-element/play storybook",
-    "docs:dev": "pnpm --filter @toy-element/docs docs:dev",
-    "docs:build": "pnpm --filter @toy-element/docs docs:build",
-    "build": "pnpm --filter toy-element build"
+    "dev": "pnpm --filter @zanwu-toy-element/play dev",
+    "story": "pnpm --filter @zanwu-toy-element/play storybook",
+    "docs:dev": "pnpm --filter @zanwu-toy-element/docs docs:dev",
+    "docs:build": "pnpm --filter @zanwu-toy-element/docs docs:build",
+    "build": "pnpm --filter zanwu-toy-element build"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
@@ -28,18 +28,20 @@
     "postcss-each-variables": "0.3.0",
     "postcss-for": "2.1.1",
     "postcss-nested": "6.0.1",
+    "release-it": "^17.8.2",
+    "rimraf": "^6.0.1",
     "typescript": "5.2.2",
     "vite": "5.1.4",
     "vitest": "1.4.0",
     "vue-tsc": "1.8.27"
   },
   "dependencies": {
-    "@toy-element/components": "workspace:*",
-    "@toy-element/hooks": "workspace:*",
-    "@toy-element/theme": "workspace:*",
-    "@toy-element/utils": "workspace:*",
+    "@zanwu-toy-element/components": "workspace:*",
+    "@zanwu-toy-element/hooks": "workspace:*",
+    "@zanwu-toy-element/theme": "workspace:*",
+    "@zanwu-toy-element/utils": "workspace:*",
     "lodash-es": "~4.17.21",
-    "toy-element": "workspace:*",
-    "vue": "3.4.19"
+    "vue": "3.4.19",
+    "zanwu-toy-element": "workspace:*"
   }
 }

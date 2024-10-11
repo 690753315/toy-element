@@ -1,8 +1,8 @@
 import { createApp } from "vue"
 import App from "./App.vue"
 
-import toyElement from "toy-element"
-import "toy-element/dist/index.css";
+import toyElement from "zanwu-toy-element"
+import "zanwu-toy-element/dist/index.css"
 
 const app = createApp(App)
 

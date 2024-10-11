@@ -1,6 +1,6 @@
 {
-  "name": "toy-element",
-  "version": "1.0.0",
+  "name": "zanwu-toy-element",
+  "version": "1.0.1",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -31,7 +31,8 @@
     "vue": "^3.4.27"
   },
   "scripts": {
-    "build": "run-s build-only move-style",
+    "build": "run-s clean build-only move-style",
+    "clean": "rimraf dist",
     "build-only": "run-p build-es build-umd",
     "move-style": "move-file dist/es/index.css dist/index.css",
     "build-umd": "vite build --config vite.umd.config.ts",

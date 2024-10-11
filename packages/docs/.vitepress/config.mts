@@ -2,8 +2,8 @@ import { defineConfig } from "vitepress"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/toy-element/",
-  title: "Toy-Element",
+  base: "/zanwu-toy-element/",
+  title: "Zanwu-Toy-Element",
   description: "高仿 ElementPlus 组件库",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

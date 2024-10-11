@@ -2,7 +2,7 @@
 import { ref, computed } from "vue"
 import type { AlertProps, AlertEmits, AlertInstance } from "./types"
 import { ErIcon } from "../Icon"
-import { typeIconMap } from "@toy-element/utils"
+import { typeIconMap } from "@zanwu-toy-element/utils"
 
 defineOptions({
   name: "ErAlert"

@@ -5,7 +5,7 @@ import {
   ErCollapse,
   ErCollapseItem,
   ErAlert
-} from "@toy-element/components"
+} from "@zanwu-toy-element/components"
 
 import type { Plugin } from "vue"
 

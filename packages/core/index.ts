@@ -1,11 +1,11 @@
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fas } from "@fortawesome/free-solid-svg-icons"
 
-import { makeInstaller } from "@toy-element/utils"
+import { makeInstaller } from "@zanwu-toy-element/utils"
 
 import components from "./components"
 
-import "@toy-element/theme/index.css"
+import "@zanwu-toy-element/theme/index.css"
 
 // 添加fontawesome图标
 library.add(fas)

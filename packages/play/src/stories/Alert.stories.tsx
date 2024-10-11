@@ -1,7 +1,7 @@
 import type { StoryObj, Meta, ArgTypes } from "@storybook/vue3"
 import { ref, watch } from "vue"
 import { fn } from "@storybook/test"
-import { ErAlert, type AlertInstance } from "toy-element"
+import { ErAlert, type AlertInstance } from "zanwu-toy-element"
 
 type Story = StoryObj<typeof ErAlert> & { argTypes?: ArgTypes }
 

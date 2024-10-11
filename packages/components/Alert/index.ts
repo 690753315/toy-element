@@ -1,6 +1,6 @@
 import Alert from "./Alert.vue"
 
-import { withInstall } from "@toy-element/utils"
+import { withInstall } from "@zanwu-toy-element/utils"
 
 export const ErAlert = withInstall(Alert)
 

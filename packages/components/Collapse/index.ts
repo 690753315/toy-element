@@ -1,7 +1,7 @@
 import Collapse from "./Collapse.vue"
 import CollapseItem from "./CollapseItem.vue"
 
-import { withInstall } from "@toy-element/utils"
+import { withInstall } from "@zanwu-toy-element/utils"
 
 // 往组件上添加install方法，暴露返回的组件
 export const ErCollapse = withInstall(Collapse)
