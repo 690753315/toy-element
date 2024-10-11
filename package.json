@@ -1,8 +1,32 @@
 {
   "name": "@toy-element/workspace",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Components library by Vue3 + Ts",
+  "type": "module",
+  "main": "./dist/umd/index.umd.cjs",
+  "module": "./dist/es/index.js",
+  "types": "./dist/types/core/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/es/index.js",
+      "require": "./dist/umd/index.cjs",
+      "types": "./dist/types/core/index.d.ts"
+    },
+    "./dist/": {
+      "import": "./dist/",
+      "require": "./dist/"
+    }
+  },
+  "sideEffects": [
+    "./dist/index.css",
+    "./dist/theme/*.css"
+  ],
+  "peerDependencies": {
+    "vue": "^3.4.27"
+  },
   "scripts": {
     "dev": "pnpm --filter @toy-element/play dev",
     "story": "pnpm --filter @toy-element/play storybook",
@@ -10,9 +34,6 @@
     "docs:build": "pnpm --filter @toy-element/docs docs:build",
     "build": "pnpm --filter toy-element build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
