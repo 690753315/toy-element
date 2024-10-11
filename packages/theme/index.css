@@ -1,16 +1,10 @@
-@import "./reset.css";
+@import './reset.css';
 
 :root {
   /* colors */
   --er-color-white: #ffffff;
   --er-color-black: #000000;
-  --colors: (
-    primary: #409eff,
-    success: #67c23a,
-    warning: #e6a23c,
-    danger: #f56c6c,
-    info: #909399
-  );
+  --colors: (primary: #409eff, success: #67c23a, warning: #e6a23c, danger: #f56c6c, info: #909399);
   --er-bg-color: #ffffff;
   --er-bg-color-page: #f2f3f5;
   --er-bg-color-overlay: #ffffff;
@@ -36,7 +30,7 @@
   @each $val, $color in var(--colors) {
     --er-color-$(val): $(color);
     @for $i from 3 to 9 {
-      --er-color-$(val)-light-$(i): mix(#fff, $(color), 0$ (i));
+      --er-color-$(val)-light-$(i): mix(#fff, $(color), 0.$(i));
     }
     --er-color-$(val)-dark-2: mix(#000, $(color), 0.2);
   }
@@ -45,8 +39,7 @@
   --er-border-width: 1px;
   --er-border-style: solid;
   --er-border-color-hover: var(--er-text-color-disabled);
-  --er-border: var(--er-border-width) var(--er-border-style)
-    var(--er-border-color);
+  --er-border: var(--er-border-width) var(--er-border-style) var(--er-border-color);
   --er-border-radius-base: 4px;
   --er-border-radius-small: 2px;
   --er-border-radius-round: 20px;
@@ -59,9 +52,8 @@
   --er-font-size-base: 14px;
   --er-font-size-small: 13px;
   --er-font-size-extra-small: 12px;
-  --er-font-family: "Helvetica Neue", Helvetica, "PingFang SC",
-    "Hiragino Sans GB", "Microsoft YaHei", "\5fae\8f6f\96c5\9ed1", Arial,
-    sans-serif;
+  --er-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', '\5fae\8f6f\96c5\9ed1', Arial, sans-serif;
   --er-font-weight-primary: 500;
 
   /*disabled*/

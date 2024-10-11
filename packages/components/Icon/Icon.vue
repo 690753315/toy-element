@@ -20,7 +20,7 @@ const filterProps = computed(() => omit(props, ["type", "color"]))
 <template>
   <i
     class="er-icon"
-    :class="[`er-icon-${type}`]"
+    :class="{ [`er-icon--${type}`]: type }"
     :style="{ color: props.color }"
     v-bind="$attrs"
   >
